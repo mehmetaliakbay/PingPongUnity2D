@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/HumanVsHuman.unity
+    guid: af91ae5fb41262b478f74f783de5137f
+  - enabled: 1
+    path: Assets/Scenes/HumanVsAI.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/AIvsAI.unity
+    guid: 330b09a9005dc0749a3f69f47ec83b18
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b31de079f213c674ea71970389603025
   m_configObjects: {}

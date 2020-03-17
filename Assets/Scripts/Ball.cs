@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
@@ -29,19 +27,19 @@ public class Ball : MonoBehaviour
         if(myTag.Equals(Tag.SOL_DUVAR))
         {
             //sag player skor yapar
-            rightRacket.makeScore();
+            rightRacket.MakeScore();
         }
         else if (myTag.Equals(Tag.SAG_DUVAR))
         {
             //sol player skor yapar
-            leftRacket.makeScore();
+            leftRacket.MakeScore();
         }
-        if (myTag.Equals(Tag.SAG_DUVAR))
+        if (myTag.Equals(Tag.SAG_RAKET))
         {
             DonusYonHesapla(collision,-1);
 
         }
-        else if (myTag.Equals(Tag.SOL_DUVAR))
+        else if (myTag.Equals(Tag.SOL_RAKET))
         {
             DonusYonHesapla(collision, 1);
 

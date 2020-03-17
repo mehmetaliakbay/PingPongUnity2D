@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 1047597711}
   - component: {fileID: 1047597713}
   - component: {fileID: 1047597714}
+  - component: {fileID: 1047597716}
   - component: {fileID: 1047597715}
   m_Layer: 0
   m_Name: RightRacket
@@ -378,12 +379,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1047597710}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 182db98828a810f4eae5354ed8098911, type: 3}
+  m_Script: {fileID: 11500000, guid: 39a35575cc12a0948861aa911a680a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Vertical2
   moveSpeed: 10
   scoreText: {fileID: 2036991019}
+  axisName: Vertical2
+--- !u!114 &1047597716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047597710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27e1f6a692c58164db42f48c5b301d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTag: 3
 --- !u!1 &1121685064
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +410,7 @@ GameObject:
   - component: {fileID: 1121685065}
   - component: {fileID: 1121685067}
   - component: {fileID: 1121685068}
+  - component: {fileID: 1121685070}
   - component: {fileID: 1121685069}
   m_Layer: 0
   m_Name: leftRacket
@@ -524,12 +539,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1121685064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 182db98828a810f4eae5354ed8098911, type: 3}
+  m_Script: {fileID: 11500000, guid: 39a35575cc12a0948861aa911a680a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Vertical1
   moveSpeed: 10
   scoreText: {fileID: 1131899249}
+  axisName: Vertical1
+--- !u!114 &1121685070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121685064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27e1f6a692c58164db42f48c5b301d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTag: 2
 --- !u!1 &1131899247
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 228.9, y: -65.8}
+  m_AnchoredPosition: {x: 228.90039, y: -65.799805}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1131899249
@@ -1460,7 +1488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 736.6, y: -65.2}
+  m_AnchoredPosition: {x: 736.6001, y: -65.200195}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2036991019

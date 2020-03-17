@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Racket : MonoBehaviour
+public abstract class Racket : MonoBehaviour
 {
-    public string axisName = "Vertical1";
+
     public float moveSpeed = 10;
     public Text scoreText;
 
@@ -11,11 +11,12 @@ public class Racket : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float moveAxis = Input.GetAxis(axisName) * moveSpeed;
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, moveAxis); 
-        
+        MakeMove();
     }
-    public void makeScore()
+
+    protected abstract void MakeMove();
+
+    public void MakeScore()
     {
         Score++;
         scoreText.text = Score.ToString();
